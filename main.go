@@ -64,7 +64,7 @@ func main() {
 	//router.HandleFunc("/createrepo/{name}", createRepoRoute).Methods("GET")
 	router.HandleFunc("/new", createRepoPostRoute).Methods("POST")
 	c := cors.New(cors.Options{
-		AllowedOrigins:   []string{"http://localhost:5173"},
+		AllowedOrigins:   []string{"http://localhost:5173", "https://nostrocket.org"},
 		AllowCredentials: true,
 	})
 
